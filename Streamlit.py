@@ -10,7 +10,7 @@ st.write('## Salary')
 
 x= st.slider('Exp', 0 , 40)
 
-model = joblib.load('liear.pkl')
+model = joblib.load('linear.pkl')
 
 y = model.predict([[x]])
 st.write('Salary : ',y )
