@@ -8,9 +8,9 @@ st.title('Hello world')
 
 st.write('## Salary')
 
-st.slider('Exp', 0 , 40)
+x= st.slider('Exp', 0 , 40)
 
-model = joblib
+model = joblib.load('liear.pkl')
 
-y = 4
+y = model.predict([[x]])
 st.write('Salary : ',y )
